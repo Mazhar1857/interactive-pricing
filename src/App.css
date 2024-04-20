@@ -1,0 +1,63 @@
+#root {
+  background-image: url(./assets/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 63%;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin: 2.5em 0 5em;
+  position: relative;
+
+  h1 {
+    font-size: 1.75em;
+    color: rgba(40, 46, 73, 1);
+    font-weight: 800;
+    margin-bottom: 0.25em;
+  }
+
+  div {
+    font-size: 0.9em;
+    color: rgb(146, 151, 161);
+    font-weight: 700;
+
+  }
+}
+
+.title::before {
+  content: url(./assets/pattern-circles.svg);
+  position: absolute;
+  top: -55%;
+  left: 31.5%;
+}
+
+@media (min-width:30em) {
+  /* .container {
+    width: 900px;
+  } */
+}
+
+@media (max-width:30em) {
+  .container {
+    padding: 3em 0;
+    width: 90%;
+  }
+
+  .title>h1{
+    font-size: 1.35em;
+  }
+
+  .title>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
